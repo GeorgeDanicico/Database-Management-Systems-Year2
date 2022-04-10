@@ -46,35 +46,15 @@ namespace Assignment1
             teamsGrid.DataSource = bsTeams;
         }
 
-        private void updateBtn_Click(object sender, EventArgs e)
-        {
-            service.UpdateDatabase();
-        }
-
-        private void playersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-/*            this.playersBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dBDataSet);*/
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-/*            // TODO: This line of code loads data into the 'dBDataSet.Teams' table. You can move, or remove it, as needed.
-            this.teamsTableAdapter.Fill(this.dBDataSet.Teams);
-            // TODO: This line of code loads data into the 'dBDataSet.Players' table. You can move, or remove it, as needed.
-            this.playersTableAdapter.Fill(this.dBDataSet.Players);*/
-
-        }
-
         private void GUI_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'dBDataSet1.Players' table. You can move, or remove it, as needed.
-            this.playersTableAdapter.Fill(this.dBDataSet1.Players);
-            // TODO: This line of code loads data into the 'dBDataSet1.Teams' table. You can move, or remove it, as needed.
-            this.teamsTableAdapter.Fill(this.dBDataSet1.Teams);
 
+
+        }
+
+        private void updateBtn_Click_1(object sender, EventArgs e)
+        {
+            service.UpdateDatabase();
         }
     }
 }
