@@ -1,0 +1,11 @@
+USE DB_COURSE
+GO
+
+--DELETE FROM Map WHERE map_name='de_aztec'
+--SELECT * FROM Map
+
+-- t1
+BEGIN TRAN
+WAITFOR DELAY '00:00:04'
+INSERT INTO Map VALUES (2, 'de_aztec')
+COMMIT TRAN

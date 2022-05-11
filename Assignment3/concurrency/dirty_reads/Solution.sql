@@ -1,0 +1,11 @@
+
+USE DB_COURSE
+GO
+
+--solution: set transaction isolation level to read commited
+SET TRAN ISOLATION LEVEL READ COMMITTED
+BEGIN TRAN
+SELECT * FROM Map
+WAITFOR DELAY '00:00:05'
+SELECT * FROM Map
+COMMIT TRAN
